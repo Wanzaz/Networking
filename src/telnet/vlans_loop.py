@@ -21,6 +21,7 @@ for n in range (2,11):
     tn.write(b"vlan " + str(n).encode("ascii") + b"\n)
     tn.write(b"name Python_VLAN_" + str(n).encode("ascii") + b"\n")
 
+tn.write(b"wr\n")
 tn.write(b"end")
 tn.write(b"exit")
 

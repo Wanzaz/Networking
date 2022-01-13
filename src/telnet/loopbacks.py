@@ -30,8 +30,9 @@ tn.write(b"int loop 1\n")
 tn.write(b"ip address 2.2.2.2 255.255.255.255\n")
 tn.write(b"router ospf 1\n")
 tn.write(b"network 0.0.0.0 255.255.255.255 area 0\n")
-tn.write(b"end")
-tn.write(b"exit")
+tn.write(b"wr\n")
+tn.write(b"end\n")
+tn.write(b"exit\n")
 
 print(tn.read_all().decode('ascii'))
 

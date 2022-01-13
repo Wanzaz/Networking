@@ -23,6 +23,7 @@ for IP in f:
     tn.write(b"vlan 3\n")
     tn.write(b"name Python_VLAN_3\n")
     tn.write(b"vlan 4\n")
+    tn.write(b"wr\n")
     tn.write(b"end\n")
     tn.write(b"exit\n")
     print(tn.read_all().decode('ascii'))
