@@ -26,5 +26,4 @@ for IP in f:
     saveouput.write(readoutput.decode('ascii'))
     saveoutput.write("\n")
     saveuotput.close
-    print(tn.read_all().decode('ascii'))
 
